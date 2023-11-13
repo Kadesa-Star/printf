@@ -7,7 +7,7 @@
  */
 void handle_char(int *count, va_list args)
 {
-putchar(va_arg(args, int));
+_putchar(va_arg(args, int));
 (*count)++;
 }
 /**
@@ -21,7 +21,7 @@ void handle_string(int *count, va_list args)
 char *str = va_arg(args, char *);
 while (*str != '\0')
 {
-putchar(*str);
+_putchar(*str);
 (*count)++;
 str++;
 }
@@ -33,7 +33,7 @@ str++;
  */
 void handle_percent(int *count)
 {
-putchar('%');
+_putchar('%');
 (*count)++;
 }
 /**
@@ -64,14 +64,14 @@ handle_percent(&count);
 break;
 default:
 handle_percent(&count);
-putchar(*format);
+_putchar(*format);
 count += 2;
 break;
 }
 }
 else
 {
-putchar(*format);
+_putchar(*format);
 count++;
 }
 format++;
