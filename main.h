@@ -31,4 +31,9 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 void print_i(va_list args);
 void print_d(va_list args);
+void print_HEXA(va_list va);
+void print_hexa(va_list va);
+void print_unsigned(va_list args);
+void print_octal(va_list va);
+
 #endif
