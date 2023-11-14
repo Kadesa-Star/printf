@@ -17,6 +17,11 @@ mask >>= 1;
 (*count)++;
 }
 }
+/**
+ * _printf -function that produces output according to a format
+ * @format: Pointer
+ * Return: NULL
+ */
 int _printf(const char *format, ...)
 {
 va_list args;

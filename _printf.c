@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * handle_char: Helper function to handle char format specifier
+ * handle_char - Helper function to handle char format specifier
  * @count: pointer
  * @args: argument count
  * Return: outputted chars
@@ -11,7 +11,7 @@ _putchar(va_arg(args, int));
 (*count)++;
 }
 /**
- * handle_string: Helper function to handle string format specifier
+ * handle_string - Helper function to handle string format specifier
  * @count: pointer
  * @args: argument count
  * Return: outputted chars
@@ -27,7 +27,7 @@ str++;
 }
 }
 /**
- * handle_percent: Helper function to handle percent sign format specifier
+ * handle_percent - Helper function to handle percent sign format specifier
  * @count: pointer
  * Return: outputted percent
  */
@@ -37,8 +37,8 @@ _putchar('%');
 (*count)++;
 }
 /**
- * _printf: function that produces output according to a format
- * @format: pointer to format 
+ * _printf - function that produces output according to a format
+ * @format: pointer to format
  * Return: outputted chars
  */
 int _printf(const char *format, ...)
