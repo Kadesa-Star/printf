@@ -26,6 +26,7 @@ int _printf(const char *format, ...);
 void handle_char(int *count, va_list args);
 void handle_string(int *count, va_list args);
 void handle_percent(int *count);
+void handle_pointer(int *count, va_list args, char *buffer);
 void handle_binary(int *count, va_list args);
 int _printf(const char *format, ...);
 int _putchar(char c);
