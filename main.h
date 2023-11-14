@@ -37,5 +37,6 @@ int print_unsigned(va_list args);
 int print_octal(va_list va);
 int print_hex_value(unsigned int number);
 int printf_str(va_list arg);
+int printf_rev_str(va_list va);
 
 #endif
