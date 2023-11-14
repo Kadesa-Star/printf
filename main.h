@@ -29,11 +29,13 @@ void handle_percent(int *count);
 void handle_binary(int *count, va_list args);
 int _printf(const char *format, ...);
 int _putchar(char c);
-void print_i(va_list args);
-void print_d(va_list args);
-void print_HEXA(va_list va);
-void print_hexa(va_list va);
-void print_unsigned(va_list args);
-void print_octal(va_list va);
+int print_i(va_list args);
+int print_d(va_list args);
+int print_HEXA(va_list va);
+int print_hexa(va_list va);
+int print_unsigned(va_list args);
+int print_octal(va_list va);
+int print_hex_value(unsigned int number);
+int printf_str(va_list arg);
 
 #endif

@@ -5,7 +5,7 @@
  * @args: integer
  * Return: nothing
  */
-void print_i(va_list args)
+int print_i(va_list args)
 {
 	int n = va_args(args, int);
 	unsigned int m1;
@@ -28,7 +28,7 @@ void print_i(va_list args)
  * @args: integer
  * Return: nothing
  */
-void print_d(va_list args)
+int print_d(va_list args)
 {
 	int n = va_args(args, int);
 	unsigned int m1;

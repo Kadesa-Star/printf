@@ -4,7 +4,7 @@
  * @args: integer
  * Return: nothing
  */
-void print_unsigned(va_list args)
+int print_unsigned(va_list args)
 {
 unsigned int n = va_arg(args, unsigned int);
 unsigned int m1;
@@ -81,8 +81,8 @@ free(arr);
 return (cont);
 }
 /**
- * print_hexa - prints hexadec uppercase
- * @va: value to convert to hex lower case
+ * print_HEXA - prints hexadec uppercase
+ * @va: value to convert to hex upper case
  * Return: the hexadecimal value
  */
 int print_HEXA(va_list va)
