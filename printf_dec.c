@@ -1,11 +1,10 @@
 #include "main.h"
-#include <stdarg.h>
 /**
- * print_i - prints an integer number
+ * print_d - prints an integer number
  * @args: integer
- * Return: integer number
+ * Return: decimal integer
  */
-int print_i(va_list args)
+int print_d(va_list args)
 {
 	int n = va_arg(args, int);
 	int m1, number;

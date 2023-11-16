@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * printf_str - prints a string
  * @arg: argument
@@ -26,8 +27,8 @@ int printf_str(va_list arg)
 			do {
 				_putchar('0');
 				leng++;
-			} while (tempt < 16)
-			leng += printf_hex_value(temp);
+			} while (temp < 16);
+			leng = leng + print_hex_value(temp);
 		}
 		_putchar(ptr[j]);
 		leng++;

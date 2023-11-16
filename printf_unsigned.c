@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdarg.h>
 /**
- * print_i - prints an integer number
+ * print_unsigned - prints an integer number
  * @args: integer
  * Return: integer number
  */
-int print_i(va_list args)
+int print_unsigned(va_list args)
 {
-	int n = va_arg(args, int);
+	unsigned int n = va_arg(args, unsigned int);
 	int m1, number;
 	int l_s = n % 10;
 	int tem = 1;

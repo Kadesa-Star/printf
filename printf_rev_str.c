@@ -11,7 +11,7 @@ int printf_rev_str(va_list va)
 	char temp;
 
 	for (length = 0; s[length] != '\0'; length++)
-		;
+
 	z = 0;
 	half = length / 2;
 
@@ -22,4 +22,5 @@ int printf_rev_str(va_list va)
 		s[z] = temp;
 		z++;
 	}
+	return (z);
 }
